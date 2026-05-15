@@ -1,16 +1,36 @@
-# React + Vite
+# 🏥 Medicore Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive hospital management dashboard built with React.  
+It helps manage patients, appointments, billing, and hospital analytics in a clean and organized UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- 👨‍⚕️ Patient Management (add, view, and organize patient records)
+- 📅 Appointment Tracking system
+- 💳 Billing system with paid/pending status
+- 📊 Analytics dashboard with visual stats
+- 🧾 Revenue and hospital performance overview
+- 🔍 Search and filtering functionality
+- 📱 Fully responsive UI for all screen sizes
+- ⚡ Fast and optimized React components
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js (Frontend framework)
+- JavaScript (Logic & functionality)
+- CSS / Tailwind (Styling)
+- Chart.js / Recharts (Data visualization - if used)
+- React Router (Navigation - if used)
+
+---
+
+## 📦 Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/mudassir-debuger/medicore-dashboard.git
