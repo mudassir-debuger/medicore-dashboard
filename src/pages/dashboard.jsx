@@ -114,7 +114,6 @@ export default function HospitalDashboard() {
   const [modal, setModal] = useState(null);
   const [form, setForm] = useState({});
   const [toast, setToast] = useState(null);
-  const navigate = useNavigate();
 
   const showToast = (msg, type = "success") => {
     setToast({ msg, type });
