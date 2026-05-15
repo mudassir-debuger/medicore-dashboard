@@ -1,0 +1,417 @@
+/* Appointment Page */
+.ap-page {
+  padding: 1.5rem 1.75rem;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+/* Header */
+.ap-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.ap-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.ap-sub {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+/* Stats */
+.ap-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.ap-stat-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ap-stat-card.confirmed { border-left: 4px solid var(--green); }
+.ap-stat-card.pending   { border-left: 4px solid var(--amber); }
+.ap-stat-card.cancelled { border-left: 4px solid var(--red); }
+
+.ap-stat-num {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1;
+}
+
+.ap-stat-label {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* Filters */
+.ap-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.ap-search {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--text);
+  width: 260px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.ap-search:focus {
+  border-color: var(--blue);
+}
+
+.ap-filter-tabs {
+  display: flex;
+  gap: 6px;
+}
+
+.ap-tab {
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #fff;
+  font-size: 13px;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.ap-tab:hover {
+  background: var(--bg);
+}
+
+.ap-tab-active {
+  background: var(--blue);
+  color: #fff;
+  border-color: var(--blue);
+}
+
+/* Table */
+.ap-table-wrap {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ap-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.ap-table thead tr {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.ap-table th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--muted);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.ap-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  vertical-align: middle;
+}
+
+.ap-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.ap-table tbody tr:hover {
+  background: #fafafa;
+}
+
+.ap-idx {
+  color: var(--light);
+  font-size: 12px;
+}
+
+.ap-patient {
+  font-weight: 600;
+}
+
+.ap-notes {
+  color: var(--muted);
+  max-width: 160px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ap-empty {
+  text-align: center;
+  color: var(--muted);
+  padding: 2rem !important;
+}
+
+/* Badges */
+.ap-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.ap-badge-confirmed {
+  background: var(--green-bg);
+  color: var(--green);
+}
+
+.ap-badge-pending {
+  background: var(--amber-bg);
+  color: var(--amber);
+}
+
+.ap-badge-cancelled {
+  background: var(--red-bg);
+  color: var(--red);
+}
+
+/* Action Buttons */
+.ap-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.ap-btn-edit {
+  padding: 4px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--blue);
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+
+.ap-btn-edit:hover {
+  background: var(--blue-bg);
+  border-color: var(--blue);
+}
+
+.ap-btn-del {
+  padding: 4px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--red);
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+
+.ap-btn-del:hover {
+  background: var(--red-bg);
+  border-color: var(--red);
+}
+
+/* Primary Button */
+.ap-btn-primary {
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--blue);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.ap-btn-primary:hover {
+  opacity: 0.9;
+}
+
+.ap-btn-cancel {
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.ap-btn-cancel:hover {
+  background: var(--bg);
+}
+
+.ap-btn-danger {
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--red);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Modal */
+.ap-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  backdrop-filter: blur(2px);
+}
+
+.ap-modal {
+  background: #fff;
+  border-radius: 16px;
+  width: 520px;
+  max-width: 95vw;
+  padding: 1.5rem;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+.ap-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.ap-modal-header h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.ap-modal-close {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.ap-modal-close:hover {
+  background: var(--bg);
+}
+
+/* Form */
+.ap-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ap-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.ap-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ap-form-group label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.ap-form-group input,
+.ap-form-group select,
+.ap-form-group textarea {
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--text);
+  background: #fff;
+  outline: none;
+  font-family: inherit;
+  transition: border 0.2s;
+}
+
+.ap-form-group input:focus,
+.ap-form-group select:focus,
+.ap-form-group textarea:focus {
+  border-color: var(--blue);
+}
+
+.ap-form-group textarea {
+  resize: vertical;
+}
+
+.ap-form-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding-top: 4px;
+}
+
+/* Delete Confirm */
+.ap-confirm {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.5rem;
+  width: 360px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+.ap-confirm h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.ap-confirm p {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+}
+
+.ap-confirm-btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

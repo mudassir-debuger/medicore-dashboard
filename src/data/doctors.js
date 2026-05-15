@@ -1,0 +1,42 @@
+export const doctors = [
+  {
+    initial: "DM",
+    name: "Dr. Malik",
+    dept: "Cardiology",
+    slots: 3,
+    bg: "#EEF4FF",
+    color: "#1C6EF2",
+  },
+  {
+    initial: "DK",
+    name: "Dr. Khan",
+    dept: "Orthopedics",
+    slots: 5,
+    bg: "#ECFDF5",
+    color: "#0F9D6E",
+  },
+  {
+    initial: "DN",
+    name: "Dr. Noor",
+    dept: "Pediatrics",
+    slots: 2,
+    bg: "#F5F3FF",
+    color: "#7C3AED",
+  },
+  {
+    initial: "DI",
+    name: "Dr. Iqbal",
+    dept: "Neurology",
+    slots: 4,
+    bg: "#FFFBEB",
+    color: "#D97706",
+  },
+  {
+    initial: "DS",
+    name: "Dr. Saeed",
+    dept: "Gynecology",
+    slots: 6,
+    bg: "#FEF2F2",
+    color: "#DC2626",
+  },
+];
